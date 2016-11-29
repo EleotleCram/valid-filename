@@ -13,6 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "browserify": "mkdir -p target; browserify boot.js > target/valid-filename-bundle.js",
     "test": "xo && ava"
   },
   "files": [
@@ -35,6 +36,7 @@
     "filename-reserved-regex": "^2.0.0"
   },
   "devDependencies": {
+    "browserify": "^13.1.1",
     "ava": "*",
     "xo": "*"
   },
